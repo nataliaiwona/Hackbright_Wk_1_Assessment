@@ -93,7 +93,6 @@ def is_hometown(town_name):
     if it is my hometown, and False otherwise."""
 
     grammatical_town_name = town_name[0].upper() + town_name[1:]
-    print grammatical_town_name == "Chicago"
     return grammatical_town_name == "Chicago"
 
 print "Is Hometown"
@@ -109,7 +108,6 @@ def full_name(first_name, last_name):
     """This function takes a first and last name as arguments as strings and 
     returns the concatenation fo the two names in one string."""
     
-    print first_name + " " + last_name
     return first_name + " " + last_name
 
 print "Full Name"
@@ -159,8 +157,8 @@ def increment(x = 1):
 
 print "Increment"
 addtwo = increment(x = 2)
-addtwo(2)
-addtwo(22)
+print addtwo(2)
+print addtwo(22)
 
 
 # 2. Call the function ``increment()`` with x = 5. Assign what is returned to a variable name, addfive. Call 
@@ -168,8 +166,8 @@ addtwo(22)
 
 print "Add Five"
 addfive = increment(x = 5) #This is called a closure?
-addfive(5)
-addfive(20)
+print addfive(5)
+print addfive(20)
 
 
 
